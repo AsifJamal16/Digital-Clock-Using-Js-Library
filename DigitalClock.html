@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .section{
+      height: 200px;
+      width: 500px;
+      border: 2px solid gray;
+      border-radius: 12px;
+      margin: 150px auto;
+      background-color: black;
+    }
+    h1{
+      text-align: center;
+      margin-top: 60px;
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h1></h1>
+  </div>
+  <script>
+    let h1=document.querySelector('h1');
+    setInterval(()=>{
+      let now=new Date();
+      now=now.toLocaleTimeString();
+      h1.innerText=now;
+    },1000)
+  </script>
+</body>
+</html>
